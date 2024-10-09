@@ -1,3 +1,89 @@
-.logo{
-    width: 250px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+}
+
+form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 65px 55px 35px 55px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.logo {
+  width: 250px;
+  margin-bottom: 40px;
+}
+
+form p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 550;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 305px;
+  text-wrap: wrap;
+}
+
+.formItem, .formItemFullnameChild {
+  display: flex;
+  flex-direction: column;
+}
+.formItemFullname{
+    display: flex;
+    justify-content: space-between;
+}
+.formItem label, .formItemFullname label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.formItem input{
+  margin: 8px 0px 16px;
+  padding: 4px 4px 4px 8px;
+  width: 400px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+}
+.formItemFullname input{
+    margin: 8px 0px 16px;
+  padding: 4px 4px 4px 8px;
+  width: 192px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+}
+.formItem input::placeholder, .formItemFullname input::placeholder{
+  font-family: Arial, Helvetica, sans-serif
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+input[type="submit"]{
+    width: 82%;
+    height: 56px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 28px;
+    margin: 30px auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+

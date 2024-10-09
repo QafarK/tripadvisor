@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Tripadvisor</title>
-</head>
-<body>
-    <img class="logo" src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg" alt="">
-</body>
+  </head>
+  <body>
+    <form action="">
+      <img
+        class="logo"
+        src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg"
+        alt=""
+      />
+
+      <p>Join to unlock the best of Tripadvisor</p>
+
+      <div class="formItemFullname">
+
+        <div class="formItemFullnameChild">
+          <label for="firstname">First Name</label>
+          <input placeholder="First Name" type="text" name="firstname" />
+        </div>
+
+        <div class="formItemFullnameChild">
+          <label for="lastname">Last Name</label>
+          <input placeholder="Last Name" type="text" name="lastname" />
+        </div>
+
+      </div>
+
+      <div class="formItem">
+        <label for="email">Email address</label>
+        <input placeholder="Email" type="text" name="email" />
+      </div>
+
+      <div class="formItem">
+        <label for="password">Create a password</label>
+        <input placeholder="Password" type="password" name="password" />
+      </div>
+      <input type="submit" value="Join" />
+    </form>
+  </body>
 </html>
